@@ -1,0 +1,49 @@
+﻿
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form action="claim.php" method="POST">
+        <h2>
+            Request Form for Claim
+        </h2>
+        <label>Client ID: <input type="text" maxlength="10" name="cid" required"  /></label><br /><br />
+        <label>Policy ID: <input type="text" maxlength="10" name="pid" /></label><br /><br />
+
+        <label>Policy Type: 
+        <input type="radio" id="option1" name="answers[]" value="option1">
+        <label for="option1">Health</label>
+
+
+        <input type="radio" id="option2" name="answers[]" value="option2">
+        <label for="option2">Life</label>
+              <input type="radio" id="option3" name="answers[]" value="option3">
+        <label for="option3">Home</label>
+
+
+        <input type="radio" id="option3" name="answers[]" value="option3">
+        <label for="option3">Motor</label>
+
+
+        <input type="radio" id="option3" name="answers[]" value="option3">
+        <label for="option3">General</label>
+
+
+        <input type="radio" id="option3" name="answers[]" value="option3">
+        <label for="option3">Retirement</label>
+
+
+
+</label><br /><br />
+        <label>Claim Amount: ₹<input type="number" name="ca" required /></label><br /><br />
+        <label>Claim Date:<input type="date" name="crd" required /></label><br /><br />
+
+        <button type="submit" name="submit" value="Submit">Claim</button>
+    </form>
+</body>
+</html>
